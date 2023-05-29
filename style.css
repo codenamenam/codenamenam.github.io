@@ -1,0 +1,148 @@
+body {
+  width: 390px;
+  height: 844px;
+}
+
+#AppBar {
+  position: relative;
+  width: 390px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+}
+
+#MainTitle {
+  position: relative;
+  width: 106px;
+  height: 24px;
+  left: calc(50% - 106px / 2);
+  top: calc(50% - 24px / 2);
+
+  font-family: "Mate";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15px;
+
+  color: #1d1d1d;
+}
+
+#SubTitle {
+  position: relative;
+  width: 167px;
+  height: 24px;
+  left: 120px;
+  top: 0px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 24px;
+  /* identical to box height, or 218% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1px;
+
+  color: #000000;
+}
+
+#Ask {
+  position: relative;
+  width: 390px;
+  height: auto;
+  margin-top: 20px;
+}
+
+#AskTitle {
+  position: relative;
+  width: 173px;
+  height: 24px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1px;
+
+  color: #000000;
+}
+
+#category-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.category {
+  position: relative;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eeeeee;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.category-text {
+  position: relative;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 24px;
+  /* identical to box height, or 240% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1.25px;
+
+  color: #000000;
+}
+
+#details {
+  position: relative;
+}
+
+#detail-title {
+  position: relative;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15px;
+
+  color: #000000;
+}
+
+#detail-p {
+  position: relative;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 24px;
+  /* or 218% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15px;
+
+  color: #000000;
+}
