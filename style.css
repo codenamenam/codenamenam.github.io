@@ -1,154 +1,3 @@
-@media only screen and (max-width: 480px) {
-  body {
-    width: 100%;
-    height: auto;
-  }
-
-  #AppBar {
-    position: relative;
-    width: 390px;
-    height: 60px;
-    left: 0px;
-    top: 0px;
-  }
-
-  #MainTitle {
-    position: relative;
-    width: 106px;
-    height: 24px;
-    left: calc(50% - 106px / 2);
-    top: calc(50% - 24px / 2);
-
-    font-family: "Mate";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    /* identical to box height, or 120% */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.15px;
-
-    color: #1d1d1d;
-  }
-
-  #SubTitle {
-    position: relative;
-    width: 167px;
-    height: 24px;
-    left: 120px;
-    top: 0px;
-
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 24px;
-    /* identical to box height, or 218% */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.1px;
-
-    color: #000000;
-  }
-
-  #Ask {
-    position: relative;
-    width: 390px;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  #AskTitle {
-    position: relative;
-    width: 173px;
-    height: 24px;
-
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.1px;
-
-    color: #000000;
-  }
-
-  #category-box {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 5px;
-  }
-
-  .category {
-    position: relative;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #eeeeee;
-    border-radius: 5px;
-    padding: 3px;
-  }
-
-  .category-text {
-    position: relative;
-    text-align: center;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 24px;
-    /* identical to box height, or 240% */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 1.25px;
-
-    color: #000000;
-  }
-
-  #details {
-    position: relative;
-  }
-
-  #detail-title {
-    position: relative;
-
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.15px;
-
-    color: #000000;
-  }
-
-  #detail-p {
-    position: relative;
-
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 24px;
-    /* or 218% */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.15px;
-
-    color: #000000;
-  }
-}
-
 html,
 body {
   width: 100vw;
@@ -157,7 +6,7 @@ body {
 
 #AppBar {
   position: relative;
-  width: 390px;
+  width: 100%;
   height: 60px;
   left: 0px;
   top: 0px;
@@ -187,8 +36,7 @@ body {
   position: relative;
   width: 167px;
   height: 24px;
-  left: 120px;
-  top: 0px;
+  left: calc(50% - 126px / 2);
 
   font-family: "Roboto";
   font-style: normal;
@@ -205,7 +53,7 @@ body {
 
 #Ask {
   position: relative;
-  width: 390px;
+  width: 100%;
   height: auto;
   margin-top: 20px;
 }
@@ -226,6 +74,46 @@ body {
   letter-spacing: 0.1px;
 
   color: #000000;
+}
+
+#planning {
+  display: none;
+}
+
+#planning.show {
+  display: block;
+}
+
+#recommandations {
+  display: none;
+}
+
+#recommandations.show {
+  display: block;
+}
+
+#tickets {
+  display: none;
+}
+
+#tickets.show {
+  display: block;
+}
+
+#korean-app {
+  display: none;
+}
+
+#korean-app.show {
+  display: block;
+}
+
+#all-other-difficulties {
+  display: none;
+}
+
+#all-other-difficulties.show {
+  display: block;
 }
 
 #category-box {
@@ -297,4 +185,31 @@ body {
   letter-spacing: 0.15px;
 
   color: #000000;
+}
+
+img {
+  width: 80%;
+}
+
+#guide-container {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+
+.guide-photo {
+  position: relative;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.guide-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
