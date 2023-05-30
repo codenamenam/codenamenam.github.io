@@ -2,22 +2,34 @@ html,
 body {
   width: 100vw;
   height: 100vh;
+  margin-top: 50px;
 }
 
 #AppBar {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 60px;
-  left: 0px;
-  top: 0px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Adjust the background color and opacity as desired */
+  backdrop-filter: blur(10px); /* Add the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  text-align: center;
+  z-index: 1;
 }
 
 #MainTitle {
   position: relative;
-  width: 106px;
-  height: 24px;
-  left: calc(50% - 106px / 2);
-  top: calc(50% - 24px / 2);
+  margin-bottom: 0px;
 
   font-family: "Mate";
   font-style: normal;
@@ -34,9 +46,7 @@ body {
 
 #SubTitle {
   position: relative;
-  width: 167px;
-  height: 24px;
-  left: calc(50% - 126px / 2);
+  margin-top: 0px;
 
   font-family: "Roboto";
   font-style: normal;
