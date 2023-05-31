@@ -1,8 +1,8 @@
 html,
 body {
-  width: 100vw;
-  height: 100vh;
-  margin-top: 50px;
+  width: 98%;
+  height: 100%;
+  margin-top: 40px;
 }
 
 #AppBar {
@@ -14,7 +14,7 @@ body {
     255,
     255,
     255,
-    0.8
+    0.7
   ); /* Adjust the background color and opacity as desired */
   backdrop-filter: blur(10px); /* Add the blur effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari support */
@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 80px;
   text-align: center;
   z-index: 1;
 }
@@ -34,7 +34,7 @@ body {
   font-family: "Mate";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 24px;
   /* identical to box height, or 120% */
   display: flex;
@@ -51,7 +51,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 24px;
   /* identical to box height, or 218% */
   display: flex;
@@ -61,22 +61,26 @@ body {
   color: #000000;
 }
 
-#Ask {
+#contents {
+  padding: 10px;
+}
+
+#select-category {
   position: relative;
   width: 100%;
   height: auto;
   margin-top: 20px;
 }
 
-#AskTitle {
+#contents-title {
   position: relative;
-  width: 173px;
-  height: 24px;
+  width: auto;
+  height: auto;
 
   font-family: "Roboto";
   font-style: normal;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   /* identical to box height, or 150% */
   display: flex;
@@ -86,6 +90,7 @@ body {
   color: #000000;
 }
 
+/*수정해야함*/
 #planning {
   display: none;
 }
@@ -126,23 +131,25 @@ body {
   display: block;
 }
 
+/*수정해야함*/
+
 #category-box {
   position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 5px;
 }
 
 .category {
   position: relative;
-  height: 30px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #eeeeee;
   border-radius: 5px;
-  padding: 3px;
+  margin: 3px;
+  padding: 5px;
 }
 
 .category-text {
@@ -151,7 +158,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 24px;
   /* identical to box height, or 240% */
   display: flex;
@@ -172,8 +179,24 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15px;
+
+  color: #000000;
+}
+
+#detail-p-title {
+  position: relative;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 18px;
+  /* or 218% */
   display: flex;
   align-items: center;
   letter-spacing: 0.15px;
@@ -187,7 +210,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 24px;
   /* or 218% */
   display: flex;
@@ -198,13 +221,17 @@ body {
 }
 
 img {
-  width: 80%;
+  width: 100%;
+}
+
+#guide {
+  margin-bottom: 100px;
 }
 
 #guide-container {
   display: flex;
-  width: 100%;
-  padding: 10px;
+  width: 80%;
+  height: auto;
 }
 
 .guide-photo {
@@ -212,14 +239,21 @@ img {
   box-sizing: border-box;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 100%;
+  margin: auto;
   overflow: hidden;
-
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .guide-photo img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+#wewill {
+  margin-bottom: 100px;
+}
+
+#wewill p {
+  line-height: 12px;
 }

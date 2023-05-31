@@ -51,103 +51,117 @@
       <p id="SubTitle">Your personal Korean chat guide</p>
     </div>
 
-    <div id="Ask">
-      <p id="AskTitle">Ask us Anything in Chat</p>
+    <div id="contents">
+      <div id="select-category">
+        <p id="contents-title">Ask us Anything in Chat</p>
 
-      <div id="category-box">
-        <div class="category" onclick="toggleDetails('planning')">
-          <p class="category-text">Planning</p>
+        <div id="category-box">
+          <div class="category" onclick="toggleDetails('planning')">
+            <p class="category-text">Planning</p>
+          </div>
+          <div class="category" onclick="toggleDetails('recommandations')">
+            <p class="category-text">Recommandations</p>
+          </div>
+          <div class="category" onclick="toggleDetails('tickets')">
+            <p class="category-text">Tickets/Reservations</p>
+          </div>
+          <div class="category" onclick="toggleDetails('korean-app')">
+            <p class="category-text">Tips for Korean App</p>
+          </div>
+          <div
+            class="category"
+            onclick="toggleDetails('all-other-difficulties')"
+          >
+            <p class="category-text">All other difficulties</p>
+          </div>
         </div>
-        <div class="category" onclick="toggleDetails('recommandations')">
-          <p class="category-text">Recommandations</p>
-        </div>
-        <div class="category" onclick="toggleDetails('tickets')">
-          <p class="category-text">Tickets/Reservations</p>
-        </div>
-        <div class="category" onclick="toggleDetails('korean-app')">
-          <p class="category-text">Tips for Korean App</p>
-        </div>
-        <div class="category" onclick="toggleDetails('all-other-difficulties')">
-          <p class="category-text">All other difficulties</p>
-        </div>
-      </div>
-    </div>
 
-    <div id="category-contents">
-      <div id="planning">
-        <p id="detail-title">Planning</p>
-        <p id="detail-p">1.Trip Planning Yet to plan your Korea trip?</p>
-        <p id="detail-p">
-          We design an ideal travel plan, considering your interests and
-          transport preferences, introducing you to hidden gems.
-        </p>
-        <p id="detail-p">2. Travel Plan Review</p>
-        <p id="detail-p">
-          Have a rough list of places to visit? We'll create a detailed
-          itinerary, including local eateries and transport, ensuring your
-          destinations are worthwhile.
-        </p>
+        <div id="category-contents">
+          <div id="planning">
+            <p id="detail-title">Planning</p>
+            <p id="detail-p-title">
+              1. Trip Planning Yet to plan your Korea trip?
+            </p>
+            <p id="detail-p">
+              We design an ideal travel plan, considering your interests and
+              transport preferences, introducing you to hidden gems.
+            </p>
+            <p id="detail-p-title">2. Travel Plan Review</p>
+            <p id="detail-p">
+              Have a rough list of places to visit? We'll create a detailed
+              itinerary, including local eateries and transport, ensuring your
+              destinations are worthwhile.
+            </p>
 
-        <img src="./img/planning.png" />
-      </div>
+            <img src="./img/planning.png" />
+          </div>
 
-      <div id="recommandations">
-        <p id="detail-title">Recommandations</p>
-        <p id="detail-p">
-          Want the must-do's, must-see's, and must-eat's in Korea? We recommend
-          spots tailored to your location, preferences, and budget, including
-          local-only places.
-        </p>
-        <img src="./img/recommendations.png" />
-      </div>
+          <div id="recommandations">
+            <p id="detail-title">Recommandations</p>
+            <p id="detail-p">
+              Want the must-do's, must-see's, and must-eat's in Korea? We
+              recommend spots tailored to your location, preferences, and
+              budget, including local-only places.
+            </p>
+            <img src="./img/recommendations.png" />
+          </div>
 
-      <div id="tickets">
-        <p id="detail-title">Tickets/Reservations</p>
-        <p id="detail-p">
-          As a foreigner, booking tickets and restaurant reservations in Korea
-          can be tricky. Give us the link or information, and we'll handle it
-          for you. If you tell us what you want, we'll find, recommend, and even
-          book the tickets on your behalf.
-        </p>
-        <img src="./img/tickets.png" />
-      </div>
+          <div id="tickets">
+            <p id="detail-title">Tickets/Reservations</p>
+            <p id="detail-p">
+              As a foreigner, booking tickets and restaurant reservations in
+              Korea can be tricky. Give us the link or information, and we'll
+              handle it for you. If you tell us what you want, we'll find,
+              recommend, and even book the tickets on your behalf.
+            </p>
+            <img src="./img/tickets.png" />
+          </div>
 
-      <div id="korean-app">
-        <p id="detail-title">Tips for Korean App</p>
-        <p id="detail-p">
-          Using Korean apps may be difficult. We'll show you how to use
-          Korea-only apps like KakaoTaxi, KakaoTalk, KakaoMap, Naver Map, and
-          CatchTable.
-        </p>
-        <img src="./img/korean app.png" />
-      </div>
+          <div id="korean-app">
+            <p id="detail-title">Tips for Korean App</p>
+            <p id="detail-p">
+              Using Korean apps may be difficult. We'll show you how to use
+              Korea-only apps like KakaoTaxi, KakaoTalk, KakaoMap, Naver Map,
+              and CatchTable.
+            </p>
+            <img src="./img/korean app.png" />
+          </div>
 
-      <div id="all-other-difficulties">
-        <p id="detail-p">asf</p>
-      </div>
-    </div>
-
-    <div id="guide">
-      <p>About our guide</p>
-      <div id="guide-container">
-        <div class="guide-photo">
-          <img src="./img/guide1.jpg" />
-        </div>
-        <div class="guide-photo">
-          <img src="./img/guide2.jpg" />
-        </div>
-        <div class="guide-photo">
-          <img src="./img/guide3.jpg" />
+          <div id="all-other-difficulties">
+            <p id="detail-p">
+              We are here to solve any difficulties you might encounter during
+              your travel. Whether it's about the immigration process, language
+              issues, travel expenses, finding your way around, or anything
+              else, feel free to ask us anything. We are committed to making
+              your travel in Korea as smooth and enjoyable as possible.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="wewill">
-      <p id="detail-p">We will respond to all requests within 4 hours.</p>
-      <ul>
-        <li>We reply from 11 AM to 11 PM.</li>
-        <li>For travel planning, we will respond by 2 PM the next day.</li>
-      </ul>
+      <div id="guide">
+        <p id="contents-title">About Our Guides</p>
+        <div id="guide-container">
+          <div class="guide-photo">
+            <img src="./img/guide1.jpg" />
+          </div>
+          <div class="guide-photo">
+            <img src="./img/guide2.jpg" />
+          </div>
+          <div class="guide-photo">
+            <img src="./img/guide3.jpg" />
+          </div>
+        </div>
+
+        <p>HYUP</p>
+      </div>
+
+      <div id="wewill">
+        <p id="detail-p">We will respond to all requests within 4 hours.</p>
+          <p id="detail-p">We reply from 11 AM to 11 PM.</p>
+          <p id="detail-p">For travel planning, we will respond by 2 PM the next day.</p>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
