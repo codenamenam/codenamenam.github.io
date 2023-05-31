@@ -90,54 +90,19 @@ body {
   color: #000000;
 }
 
-/*수정해야함*/
-#planning {
-  display: none;
-}
-
-#planning.show {
-  display: block;
-}
-
-#recommandations {
-  display: none;
-}
-
-#recommandations.show {
-  display: block;
-}
-
-#tickets {
-  display: none;
-}
-
-#tickets.show {
-  display: block;
-}
-
-#korean-app {
-  display: none;
-}
-
-#korean-app.show {
-  display: block;
-}
-
-#all-other-difficulties {
-  display: none;
-}
-
-#all-other-difficulties.show {
-  display: block;
-}
-
-/*수정해야함*/
-
 #category-box {
   position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+#category-contents > div {
+  display: none;
+}
+
+#category-contents > #planning {
+  display: block;
 }
 
 .category {
